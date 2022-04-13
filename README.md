@@ -8,19 +8,19 @@ Na tych zajęciach należy zaimplementować sieć neuronową typu MLP, w której
 
 Implementacja sieci musi być przygotowana w taki sposób, żeby łatwo zmieniać:
 
-    - Architekturę, to znaczy liczbę wejść, wyjść, neuronów w warstwach ukrytych.
-    - Funkcję aktywacji.
+- Architekturę, to znaczy liczbę wejść, wyjść, neuronów w warstwach ukrytych.
+- Funkcję aktywacji.
 
 Tak przygotowaną implementację należy następnie wykorzystać do rozwiązania zadania regresji na dostarczonych danych. Parametry sieci należy dobrać ręcznie, tak aby uzyskać możliwie dobrze wyniki na zbiorach danych (zbudować po jednej sieci dla każdego zbioru):
 
-    - square-simple
-    - steps-large
+- square-simple
+- steps-large
 
 Rozważyć architektury sieci:
 
-    - jedna warstwa ukryta, 5 neuronów,
-    - jedna warstwa ukryta, 10 neuronów,
-    - dwie warstwy ukryte, po 5 neuronów każda.
+- jedna warstwa ukryta, 5 neuronów,
+- jedna warstwa ukryta, 10 neuronów,
+- dwie warstwy ukryte, po 5 neuronów każda.
 
 Aby otrzymać 2 punkty MSE na [nieznormalizowanym] zbiorze testowym nie może przekraczać wartości 9.
 1.2.2. NN2: Implementacja propagacji wstecznej błędu (2 tygodnie, 4 punkty)
@@ -31,30 +31,30 @@ Inicjować wagi z rozkładu jednostajnego na przedziale [0,1]. Opcjonalnie zaimp
 
 Przetestować uczenie sieci na następujących zbiorach (w nawiasach wartość MSE, aby otrzymać 4 punkty):
 
-    - square-simple (jeśli sieć nie jest w stanie się nauczyć tej funkcji to coś jest bardzo źle zrobione, MSE: 4),
-    - steps-small (MSE: 4),
-    - multimodal-large (MSE: 40).
+- square-simple (jeśli sieć nie jest w stanie się nauczyć tej funkcji to coś jest bardzo źle zrobione, MSE: 4),
+- steps-small (MSE: 4),
+- multimodal-large (MSE: 40).
 
 (Wartości MSE liczone na nieznormalizowanych danych)
 1.2.3. NN3: Implementacja momentu i normalizacji gradientu (1 tydzień, 2 punkty)
 
 Zaimplementować dwa usprawnienia uczenia gradientowego sieci neuronowej:
 
-    - moment,
-    - normalizację gradientu RMSProp.
+- moment,
+- normalizację gradientu RMSProp.
 
 Porównać szybkość zbieżności procesu uczenia dla obu wariantów.
 
 Przeprowadzić eksperymenty na zbiorach(w nawiasach wartość MSE, aby otrzymać 2 punkty):
 
-    - square-large (MSE: 1),
-    - steps-large (MSE: 3),
-    - multimodal-large (MSE: 9).
+- square-large (MSE: 1),
+- steps-large (MSE: 3),
+- multimodal-large (MSE: 9).
 
 Literatura:
 
-    - Uczenie gradientowe z momentem: rozdział 3.2.2 Computational Intelligence, A. P. Engelbrecht
-    - Normalizacja gradientu: Wykład 6e: http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf
+- Uczenie gradientowe z momentem: rozdział 3.2.2 Computational Intelligence, A. P. Engelbrecht
+- Normalizacja gradientu: Wykład 6e: http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf
 
 1.2.4. NN4: Rozwiązywanie zadania klasyfikacji (1 tydzień, 2 punkty)
 
@@ -62,18 +62,18 @@ Zaimplementować funkcję softmax dla warstwy wyjściowej sieci neuronowej. Spra
 
 Przeprowadzić eksperymenty na zbiorach (w nawiasach wymagana wartość F-measure na 2 punkty):
 
-    - rings3-regular (F-measure: 0.75),
-    - easy (F-measure: 0.99),
-    - xor3 (F-measure: 0.97).
+- rings3-regular (F-measure: 0.75),
+- easy (F-measure: 0.99),
+- xor3 (F-measure: 0.97).
 
 1.2.5. NN5: Testowanie różnych funkcji aktywacji (1 tydzień, 2 punkty)
 
 Należy rozszerzyć istniejącą implementację sieci i metody uczącej o możliwość wyboru funkcji aktywacji:
 
-    - sigmoid,
-    - liniowa,
-    - tanh,
-    - ReLU.
+- sigmoid,
+- liniowa,
+- tanh,
+- ReLU.
 
 Pytanie dodatkowe – czy wszyscy implementują dokładnie gradient dla funkcji ReLU?
 
@@ -83,11 +83,11 @@ Przeprowadzić testy wstępne dla zbioru multimodal-large (regresja), dla wszyst
 
 Dla pozostałych zbiorów wybrać dwa najlepsze zestawy i zbadać ich skuteczność:
 
-    - regresja
-        - steps-large,
-    - klasyfikacja
-        - rings5-regular
-        - rings3-regular
+- regresja
+    - steps-large,
+- klasyfikacja
+    - rings5-regular
+    - rings3-regular
 
 1.2.6. NN6: Zjawisko przeuczenia + regularyzacja (brak punktów za zadanie, sprawozdanie po tym tygodniu)
 
@@ -95,9 +95,9 @@ Zaimplementować mechanizm regularyzacji wag w sieci oraz mechanizm zatrzymywani
 
 Przeprowadzić eksperymenty na zbiorach i porównać skuteczność na zbiorze testowym dla różnych wariantów przeciwdziałania przeuczeniu sieci:
 
-    - multimodal-sparse,
-    - rings5-sparse,
-    - rings3-balance,
-    - xor3-balance.
+- multimodal-sparse,
+- rings5-sparse,
+- rings3-balance,
+- xor3-balance.
 
 Author: Jan Karwowski
